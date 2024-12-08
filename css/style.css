@@ -37,11 +37,12 @@ body {
   }
 
   .container {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
+    flex: 1; /* Ocupa todo el espacio restante entre header y footer */
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+      justify-content: space-around;
   }
 
   .card {

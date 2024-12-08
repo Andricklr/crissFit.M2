@@ -8,6 +8,8 @@ Se utilizaron todas las herramientas aprendidas en las sesiones del modulo 1 y d
 
 Uso de especificidad y cascada en estilos.
 
+Se agrega flex al style para poner en práctica lo aprendido en clase
+
 
 ## Authors
 
