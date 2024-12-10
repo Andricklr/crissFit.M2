@@ -10,6 +10,8 @@ Uso de especificidad y cascada en estilos.
 
 Se agrega flex al style para poner en práctica lo aprendido en clase
 
+Se crea una nueva página para practicar Flex. En botón "Alimentación" manda a nueva página y para regresar a página principal en "Home"
+
 
 ## Authors
 
