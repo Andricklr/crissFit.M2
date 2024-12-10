@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Ejemplo</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            height: 100vh;
+            border: 1px solid black;
+        }
+
+        .sidebar {
+            width: 20%;
+            background-color: #f4f4f4;
+            border-right: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .images {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .images img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 1px solid black;
+        }
+
+        .article {
+            margin: 20px;
+            padding: 10px;
+            background-color: #ddd;
+            border: 1px solid black;
+            width: 80%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h2>Opciones</h2>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="content">
+            <div class="article">
+                <h1>Bienvenido a la sección de alimentación</h1>
+                <p>En esta sección encontrarás los paquetes de alimentación para deportistas</p>
+            </div>
+            <div class="images">
+                <img src="./css/comid.webp" alt="Placeholder Image 1">
+                <img src="./css/Dieta.jpg" alt="Placeholder Image 2">
+                <img src="./css/imagen cr1.jpg" alt="Placeholder Image 3">
+                <img src="./css/Lequilibre.webp" alt="Placeholder Image 4">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
