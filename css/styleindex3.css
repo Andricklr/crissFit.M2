@@ -1,0 +1,70 @@
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: brown;
+            color: white;
+            padding: 1em;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 10;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1em;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main content */
+        .main {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 4em; /* To avoid overlap with navbar */
+            padding: 2em;
+        }
+
+        .card {
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 1em;
+            margin: 1em;
+            flex: 1 1 300px;
+            position: relative;
+        }
+
+        .card:hover {
+            z-index: 5;
+            transform: scale(1.05);
+            transition: 0.3s;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+    
