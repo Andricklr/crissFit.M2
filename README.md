@@ -12,7 +12,7 @@ Se agrega flex al style para poner en práctica lo aprendido en clase
 
 Se crea una nueva página para practicar Flex. En botón "Alimentación" manda a nueva página y para regresar a página principal en "Home"
 
-
+Se crea nueva página para agregar herramientas nuevas: navbar, footer, flexbox, position y z-index en CSS. Esta sección se verá al hacerle click en Ejercicios.
 ## Authors
 
 - [@Andricklr](https://www.github.com/Andricklr)
