@@ -1,123 +1,132 @@
+/* Estilo base (ya incluido en tu código anterior) */
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  nav {
-    background-color: #444;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-  }
+nav {
+  background-color: #444;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
 
-  nav a {
-    color: #fff;
-    margin: 0 15px;
-    text-decoration: none;
-    
-  }
+nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+}
 
-  nav a:hover {
-    color: #ffd700;
-  }
+nav a:hover {
+  color: #ffd700;
+}
 
-  .container {
-    flex: 1; /* Ocupa todo el espacio restante entre header y footer */
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      padding: 20px;
-      justify-content: space-around;
-  }
+.container {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: space-around;
+}
 
+.card {
+  width: 30%;
+  margin: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background-color: #f9f9f9;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+form {
+  background-color: #eee;
+  padding: 20px;
+  margin: 20px auto;
+  width: 50%;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+}
+
+/* Media Queries para Tablets (pantallas entre 768px y 1024px) */
+@media (max-width: 1024px) and (min-width: 768px) {
   .card {
-    width: 30%;
-    margin: 15px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, background-color 0.3s;
-    span {
-      color: red;
-    }
-  }
-
-  .card:hover {
-    transform: scale(1.05);
-    background-color: #f9f9f9;
-  }
-
-  .card img {
-    width: 100%;
-    height: auto;
-  }
-
-  .card-content {
-    padding: 15px;
-  }
-
-  .card-content h3 {
-    color: #333;
-  }
-
-  .card-content p {
-    color: #666;
+      width: 45%; /* Ajustar el tamaño de las tarjetas */
   }
 
   form {
-    background-color: #eee;
-    padding: 20px;
-    margin: 20px auto;
-    width: 50%;
-    border-radius: 8px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+      width: 70%; /* Aumentar el ancho del formulario */
   }
 
-  form label {
-    display: block;
-    margin-bottom: 5px;
-    color: #333;
+  nav {
+      flex-wrap: wrap; /* Permitir que los enlaces ocupen varias líneas si es necesario */
+  }
+}
+
+/* Media Queries para Celulares (pantallas menores a 768px) */
+@media (max-width: 767px) {
+  .container {
+      flex-direction: column; /* Las tarjetas se apilan verticalmente */
+      gap: 15px;
   }
 
-  form input, form textarea, form button {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+  .card {
+      width: 100%; /* Las tarjetas ocupan todo el ancho */
   }
 
-  form button {
-    background-color: #444;
-    color: #fff;
-    border: none;
-    cursor: pointer;
+  form {
+      width: 90%; /* El formulario ocupa casi todo el ancho de la pantalla */
   }
 
-  form button:hover {
-    background-color: #333;
+  nav {
+      flex-direction: column; /* Los enlaces de navegación se apilan */
+      align-items: center;
   }
 
-  footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    position: relative;
+  nav a {
+      margin: 10px 0; /* Separar los enlaces verticalmente */
   }
+
+  header {
+      flex-wrap: wrap; /* Ajustar el contenido del encabezado */
+  }
+}

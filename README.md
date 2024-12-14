@@ -13,6 +13,9 @@ Se agrega flex al style para poner en práctica lo aprendido en clase
 Se crea una nueva página para practicar Flex. En botón "Alimentación" manda a nueva página y para regresar a página principal en "Home"
 
 Se crea nueva página para agregar herramientas nuevas: navbar, footer, flexbox, position y z-index en CSS. Esta sección se verá al hacerle click en Ejercicios.
+
+Se agrega código media queries aprendido en clase para mejorar la experiencia de usuario en el uso de la página en tablets y en dispositivos móviles sin afectar la visuabilidad en computadoras.
+ 
 ## Authors
 
 - [@Andricklr](https://www.github.com/Andricklr)

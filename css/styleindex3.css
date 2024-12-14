@@ -1,70 +1,115 @@
+/* Estilo base (ya incluido en tu código anterior) */
 
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
 
-        /* Navbar */
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: brown;
-            color: white;
-            padding: 1em;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: 10;
-        }
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: brown;
+    color: white;
+    padding: 1em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
 
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            margin: 0 1em;
-        }
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1em;
+}
 
-        .navbar a:hover {
-            text-decoration: underline;
-        }
+.navbar a:hover {
+    text-decoration: underline;
+}
 
-        /* Main content */
-        .main {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            flex-wrap: wrap;
-            margin-top: 4em; /* To avoid overlap with navbar */
-            padding: 2em;
-        }
+/* Main content */
+.main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 4em; /* To avoid overlap with navbar */
+    padding: 2em;
+}
 
-        .card {
-            background-color: #f4f4f4;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            padding: 1em;
-            margin: 1em;
-            flex: 1 1 300px;
-            position: relative;
-        }
+.card {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1em;
+    margin: 1em;
+    flex: 1 1 300px;
+    position: relative;
+}
 
-        .card:hover {
-            z-index: 5;
-            transform: scale(1.05);
-            transition: 0.3s;
-        }
+.card:hover {
+    z-index: 5;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
 
-        /* Footer */
-        .footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1em;
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-        }
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* Media Queries para Tablets (pantallas entre 768px y 1024px) */
+@media (max-width: 1024px) and (min-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Navbar se reorganiza verticalmente */
+        text-align: center;
+    }
+
+    .main {
+        padding: 1em; /* Reducir el padding para aprovechar espacio */
+    }
+
+    .card {
+        flex: 1 1 45%; /* Ajustar el ancho de las tarjetas */
+        margin: 1em auto;
+    }
+}
+
+/* Media Queries para Celulares (pantallas menores a 768px) */
+@media (max-width: 767px) {
+    .navbar {
+        flex-direction: column; /* Navbar se apila verticalmente */
+        text-align: center;
+    }
+
+    .navbar a {
+        margin: 0.5em 0; /* Separar enlaces verticalmente */
+    }
+
+    .main {
+        flex-direction: column; /* El contenido se apila */
+        padding: 1em;
+    }
+
+    .card {
+        flex: 1 1 100%; /* Tarjetas ocupan todo el ancho */
+        margin: 1em 0;
+    }
+
+    .footer {
+        font-size: 0.9em; /* Reducir ligeramente el tamaño del texto del footer */
+    }
+}
+
     
